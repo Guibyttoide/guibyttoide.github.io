@@ -39,6 +39,7 @@
   background-size: 1000% 1000%;
   animation: linear-gradient 5s ease-in-out infinite;
   transition: .3s;
+  background: #0a0a0a;
 }
 
 @media (max-width: 800px) {
