@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -21,6 +21,24 @@
   color: #fafafa;
   display: block;
   font-family: Exo;
+}
+
+.header-menu a:hover {
+  background: -webkit-linear-gradient(
+    331deg,
+    #e358da,
+    #c14fdb,
+    #ac42d0,
+    #8632b8,
+    #5b2f92,
+    #381768,
+    #19135b
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 1000% 1000%;
+  animation: linear-gradient 5s ease-in-out infinite;
+  transition: .3s;
 }
 
 @media (max-width: 800px) {

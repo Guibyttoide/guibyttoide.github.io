@@ -5,7 +5,7 @@
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 120px 20px 60px 20px;
+  padding: 100px 20px 50px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
@@ -18,8 +18,26 @@
   color: #9f9f9f;
 }
 
-.footer-texto p, strong {
+.footer-texto p,
+strong {
   color: #fafafa;
+}
+
+.footer-texto strong:hover {
+  background: -webkit-linear-gradient(
+    331deg,
+    #e358da,
+    #c14fdb,
+    #ac42d0,
+    #8632b8,
+    #5b2f92,
+    #381768
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 1000% 1000%;
+  animation: linear-gradient 5s ease-in-out infinite;
+  transition: 0.3s;
 }
 
 .footer-contato {
@@ -27,8 +45,8 @@
 }
 
 .footer-contato li {
-  font-weight: bold;
-  font-size: 2.25rem;
+  font-family: "Exo";
+  font-size: 1.875rem;
   line-height: 1.1;
   color: #fafafa;
   margin-bottom: 30px;
@@ -36,6 +54,40 @@
 
 .footer-contato li a {
   color: #fafafa;
+}
+
+.footer-contato li:hover {
+  background: -webkit-linear-gradient(
+    331deg,
+    #e358da,
+    #c14fdb,
+    #ac42d0,
+    #8632b8,
+    #5b2f92,
+    #381768
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 1000% 1000%;
+  animation: linear-gradient 5s ease-in-out infinite;
+  transition: 0.3s;
+}
+
+.footer-contato a:hover {
+  background: -webkit-linear-gradient(
+    331deg,
+    #e358da,
+    #c14fdb,
+    #ac42d0,
+    #8632b8,
+    #5b2f92,
+    #381768
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 1000% 1000%;
+  animation: linear-gradient 5s ease-in-out infinite;
+  transition: 0.3s;
 }
 
 .footer-copy {
@@ -54,9 +106,6 @@
     word-break: break-all;
     max-width: minmax();
   }
-  .footer-container {
-    padding: 90px 20px 90px 20px;
-  }
   .footer-texto {
     font-size: 1.25rem;
   }
@@ -69,9 +118,15 @@
     display: block;
     width: 4px;
     height: 170px;
-    background: linear-gradient(#8677B6, #675DA6);
+    background: linear-gradient(#8677b6, #675da6);
     position: absolute;
     left: -15px;
     border-radius: 4px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-texto {
+    margin-bottom: 20px;
   }
 }

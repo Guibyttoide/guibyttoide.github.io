@@ -1,7 +1,7 @@
 .experiencia {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 100px 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
@@ -23,6 +23,23 @@
   color: #fafafa;
 }
 
+.experiencia-texto strong:hover {
+  background: -webkit-linear-gradient(
+    331deg,
+    #e358da,
+    #c14fdb,
+    #ac42d0,
+    #8632b8,
+    #5b2f92,
+    #381768
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 1000% 1000%;
+  animation: linear-gradient 5s ease-in-out infinite;
+  transition: .3s;
+}
+
 .empresa {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -40,7 +57,7 @@
   display: block;
   width: 4px;
   height: 20px;
-  background: linear-gradient(#8677B6, #675DA6);
+  background: linear-gradient(#984EB1, #7C39A4);
   position: absolute;
   top: 20px;
   left: -4px;
